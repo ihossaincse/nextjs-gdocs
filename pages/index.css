@@ -1,0 +1,14 @@
+.blank__image {
+  max-width: 150px;
+  border: 2px solid transparent;
+}
+.blank__image:hover {
+  border-color: blue;
+}
+.option {
+  cursor: pointer;
+  padding-right: 10px;
+}
+.textEditor {
+  min-height: 100vh;
+}

@@ -1,0 +1,26 @@
+import Button from "@material-tailwind/react/Button";
+import Icon from "@material-tailwind/react/Icon";
+import React from 'react';
+
+const Header = () => {
+    return (
+        <header className="sticky z-50 top-0 flex items-center px-4 py-2 shadow-md bg-white">
+            <Button color="grey" buttonType="outline" rounded={true} iconOnly={true} ripple="dark" className="h-20 w-20 border-0">
+                <Icon name="menu" size="3xl" />
+            </Button>
+            <Icon name="description" size="5xl" color="blue" />
+            <h1 className="ml-2 text-grey-700 text-2xl">Docs</h1>
+
+            <div className="flex flex-grow items-center mx-5 px-5 py-2 bg-gray-100 text-gray-600 rounded-lg">
+                <Icon name="search" size="3xl" color="darkgrey" />
+                <input type="text" placeholder="Search" className="flex-grow px-5 text-base bg-transparent outline-none" />
+            </div>
+
+            <Button color="grey" buttonType="outline" rounded={true} iconOnly={true} ripple="dark" className="ml-5 h-20 w-20 border-0">
+                <Icon name="apps" size="3xl" color="gray" />
+            </Button>
+        </header>
+    )
+}
+
+export default Header
